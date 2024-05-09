@@ -1,0 +1,96 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about"> About </a>
+          </li>
+
+          <li>
+            <a href="#services"> Services </a>
+          </li>
+
+          <li>
+            <a href="#project">Project</a>
+          </li>
+          <li>
+            <a href="#contact">Contact form</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- This is hero section which describes about the person -->
+    <!-- No need to use id as it is not in navigation -->
+    <section aria-label="hero">
+      <h1>Hey, my name is Oudarja. I am a CSE engineer.</h1>
+      <a href="#contact">Get in touch</a>
+    </section>
+
+    <!-- The primary purpose of aria-label is to enhance the 
+      accessibility of your web content for users who rely on
+      assistive technologies, such as screen readers. -->
+    <section aria-label="about" id="about">
+      <!-- a section should have heading -->
+      <h2>About</h2>
+      <img src="/profile-pic.jpg" alt="profile-photo" width="400" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+        inventore tempore soluta atque quia blanditiis illum suscipit expedita
+        temporibus totam!
+      </p>
+    </section>
+
+    <section aria-label="services" id="services">
+      <h2>services</h2>
+      <div>
+        <!-- Here each article is each card basically -->
+        <article>
+          <img src="./landing-page.png" alt="landing-page" />
+          <h4>Landing page</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+            totam temporibus architecto!
+          </p>
+        </article>
+
+        <article>
+          <img src="./personal-blog.png" alt="personal-blog" />
+          <h4>Personal blog</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+            totam temporibus architecto!
+          </p>
+        </article>
+
+        <article>
+          <img src="./web-design.png" alt="web-design" />
+          <h4>Web design</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+            totam temporibus architecto!
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-label="contact" id="contact">
+      <h2>Contact form</h2>
+    </section>
+
+    <!-- 
+     1) header with navigation
+     2) hero section
+     3) about
+     4) services
+     5) project
+     6) contact form
+     -->
+  </body>
+</html>
