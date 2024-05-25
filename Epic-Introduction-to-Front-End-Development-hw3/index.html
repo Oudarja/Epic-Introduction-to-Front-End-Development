@@ -39,7 +39,7 @@
     <section aria-label="about" id="about">
       <!-- a section should have heading -->
       <h2>About</h2>
-      <img src="/profile-pic.jpg" alt="profile-photo" width="400" />
+      <img src="IMG_20230511_234810_588.jpg" alt="profile-photo" width="400" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
         inventore tempore soluta atque quia blanditiis illum suscipit expedita
@@ -82,6 +82,35 @@
 
     <section aria-label="contact" id="contact">
       <h2>Contact form</h2>
+      <form action="https://formsubmit.co/oudarja360@gmail.com" method="POST">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          name="Name"
+          placeholder="Oudarja barman Tanmoy"
+          required
+          minlength="2"
+        />
+
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="Email"
+          type="email"
+          placeholder="oudarja360@gmail.com"
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Enter your message"
+          minlength="10"
+          maxlength="200"
+        >
+        </textarea>
+        <button type="submit">Send</button>
+      </form>
     </section>
 
     <!-- 
