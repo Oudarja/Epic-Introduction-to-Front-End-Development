@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Data Table</title>
+    <style>
+      body * {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Random Data Table
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2">Column 1</th>
+          <th>Column 2</th>
+          <th colspan="2">Column 3</th>
+          <th colspan="2">Column 4</th>
+        </tr>
+      </thead>
+      <tbody aria-rowspan="6">
+        <tr>
+          <td colspan="2">Row1,Col1</td>
+          <td>Row1,Col2</td>
+          <td colspan="2">Row1,Col3</td>
+          <td colspan="2">Row1,Col4</td>
+        </tr>
+        <tr>
+          <td colspan="2">Row2,col1</td>
+          <td>Row2,Col2</td>
+          <td colspan="2">Row2,Col3</td>
+          <td colspan="2">Row2,Col4</td>
+        </tr>
+        <tr>
+          <td colspan="2">Row3,Col1</td>
+          <td colspan="2">Row3,Col2</td>
+          <td colspan="2">Row3,Col3</td>
+          <td colspan="2">Row3,Col4</td>
+        </tr>
+        <tr>
+          <td colspan="2">Row4,Col1</td>
+          <td colspan="2">Row4,Col2</td>
+          <td colspan="2">Row4,Col3</td>
+          <td colspan="2">Row4,Col4</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="8">This is the table footer</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
