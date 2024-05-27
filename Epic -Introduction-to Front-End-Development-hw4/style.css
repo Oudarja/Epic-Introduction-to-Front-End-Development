@@ -1,0 +1,85 @@
+.small-input {
+  width: 100px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.medium-input {
+  width: 200px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.large-input {
+  width: 400px;
+  padding: 20px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* When keyboard is pressed on the input field or focused it turns into green border */
+
+.small-input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.medium-input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.large-input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.small-input .secondary {
+  width: 100px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.medium-input.secondary {
+  width: 200px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.large-input.secondary {
+  width: 400px;
+  padding: 20px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.small-input.secondary:focus {
+  outline: none;
+  border-color: #af4ca2;
+  box-shadow: 0 0 5px rgba(175, 76, 172, 0.5);
+}
+
+.medium-input.secondary:focus {
+  outline: none;
+  border-color: #af4ca2;
+  box-shadow: 0 0 5px rgba(175, 76, 172, 0.5);
+}
+
+.large-input.secondary:focus {
+  outline: none;
+  border-color: #af4ca2;
+  box-shadow: 0 0 5px rgba(175, 76, 172, 0.5);
+}
