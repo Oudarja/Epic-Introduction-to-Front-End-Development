@@ -167,6 +167,8 @@ body {
     outline-color: #9443aa;
   }
 }
+
+/* Button */
 .contact-form-submit-btn {
   padding: 8px 10px;
   font-size: 16px;
@@ -178,6 +180,8 @@ body {
 .contact-form-submit-btn:hover {
   background-color: rgb(161, 161, 218);
 }
+
+/* when button is pressed then size increased or padded by 110% */
 
 .contact-form-submit-btn:active {
   transform: scale(1.1);
