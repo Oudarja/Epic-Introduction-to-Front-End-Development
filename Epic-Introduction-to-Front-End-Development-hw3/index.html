@@ -3,117 +3,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="nav">
+        <ul class="nav-links">
           <li>
-            <a href="#about"> About </a>
+            <a class="nav-link" href="#about"> About </a>
           </li>
 
           <li>
-            <a href="#services"> Services </a>
+            <a class="nav-link" href="#services"> Services </a>
           </li>
 
           <li>
-            <a href="#project">Project</a>
+            <a class="nav-link" href="#project">Project</a>
           </li>
           <li>
-            <a href="#contact">Contact form</a>
+            <a class="nav-link" href="#contact">Contact form</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <!-- This is hero section which describes about the person -->
-    <!-- No need to use id as it is not in navigation -->
-    <section aria-label="hero">
-      <h1>Hey, my name is Oudarja. I am a CSE engineer.</h1>
-      <a href="#contact">Get in touch</a>
-    </section>
+    <main class="main">
+      <!-- This is hero section which describes about the person -->
+      <!-- No need to use id as it is not in navigation -->
+      <section class="hero" aria-label="hero">
+        <!-- Here div is a container to wrap the 2 item in h1 and a tag -->
+        <div class="hero-wrapper">
+          <h1>Hey, my name is Oudarja. I am a Computer Science Engineer.</h1>
+          <a class="cta cta-primary" href="#contact">Contact me</a>
+        </div>
+        <div class="hero-img-container">
+          <img
+            class="hero-img"
+            src="IMG_20230511_234810_588.jpg"
+            alt="profile-photo"
+            width="400"
+          />
+        </div>
+      </section>
 
-    <!-- The primary purpose of aria-label is to enhance the 
+      <!-- The primary purpose of aria-label is to enhance the 
       accessibility of your web content for users who rely on
       assistive technologies, such as screen readers. -->
-    <section aria-label="about" id="about">
-      <!-- a section should have heading -->
-      <h2>About</h2>
-      <img src="IMG_20230511_234810_588.jpg" alt="profile-photo" width="400" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
-        inventore tempore soluta atque quia blanditiis illum suscipit expedita
-        temporibus totam!
-      </p>
-    </section>
+      <section aria-label="about" id="about">
+        <!-- a section should have heading -->
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+          inventore tempore soluta atque quia blanditiis illum suscipit expedita
+          temporibus totam!
+        </p>
+      </section>
 
-    <section aria-label="services" id="services">
-      <h2>services</h2>
-      <div>
-        <!-- Here each article is each card basically -->
-        <article>
-          <img src="./landing-page.png" alt="landing-page" />
-          <h4>Landing page</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-            totam temporibus architecto!
-          </p>
-        </article>
+      <section aria-label="services" id="services">
+        <h2>services</h2>
+        <div>
+          <!-- Here each article is each card basically -->
+          <article>
+            <img src="./landing-page.png" alt="landing-page" />
+            <h4>Landing page</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+              totam temporibus architecto!
+            </p>
+          </article>
 
-        <article>
-          <img src="./personal-blog.png" alt="personal-blog" />
-          <h4>Personal blog</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-            totam temporibus architecto!
-          </p>
-        </article>
+          <article>
+            <img src="./personal-blog.png" alt="personal-blog" />
+            <h4>Personal blog</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+              totam temporibus architecto!
+            </p>
+          </article>
 
-        <article>
-          <img src="./web-design.png" alt="web-design" />
-          <h4>Web design</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-            totam temporibus architecto!
-          </p>
-        </article>
-      </div>
-    </section>
+          <article>
+            <img src="./web-design.png" alt="web-design" />
+            <h4>Web design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+              totam temporibus architecto!
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <section aria-label="contact" id="contact">
-      <h2>Contact form</h2>
-      <form action="https://formsubmit.co/oudarja360@gmail.com" method="POST">
-        <label for="name">Name</label>
-        <input
-          id="name"
-          name="Name"
-          placeholder="Oudarja barman Tanmoy"
-          required
-          minlength="2"
-        />
+      <section aria-label="contact" id="contact">
+        <h2>Contact form</h2>
+        <form action="https://formsubmit.co/oudarja360@gmail.com" method="POST">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="Name"
+            placeholder="Oudarja barman Tanmoy"
+            required
+            minlength="2"
+          />
 
-        <label for="email">Email</label>
-        <input
-          id="email"
-          name="Email"
-          type="email"
-          placeholder="oudarja360@gmail.com"
-        />
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="Email"
+            type="email"
+            placeholder="oudarja360@gmail.com"
+          />
 
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Enter your message"
-          minlength="10"
-          maxlength="200"
-        >
-        </textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-
-    <!-- 
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message"
+            minlength="10"
+            maxlength="200"
+          >
+          </textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <!-- 
      1) header with navigation
      2) hero section
      3) about
@@ -121,5 +139,8 @@
      5) project
      6) contact form
      -->
+    </main>
+
+    <!---footer--->
   </body>
 </html>
