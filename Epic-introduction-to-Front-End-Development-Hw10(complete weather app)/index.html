@@ -20,8 +20,28 @@
       <div class="bg-primary p-4 rounded" style="width: 500px">
         <h1 class="fs-1 text-light">Weather app</h1>
         <div class="d-flex gap-3">
-          <input class="form-control" placeholder="Enter city..." />
-          <button class="btn btn-light">search</button>
+          <input
+            id="user-input"
+            class="form-control"
+            placeholder="Enter city..."
+          />
+          <button onclick="getWeather()" class="btn btn-light">search</button>
+        </div>
+        <div id="error-message" class="fs-6 text-danger"></div>
+        <img id="weather-icon" class="rounded mx-auto d-block" />
+        <div id="weather-temp" class="fs-2 text-light text-center"></div>
+        <div id="weather-city" class="fs-3 text-light text-center"></div>
+        <div id="weather-description" class="fs-4 text-light text-center"></div>
+        <div class="d-flex gap-3 justify-content-between">
+          <div class="d-flex align-items-center gap-3">
+            <img id="weather-humidity-icon" alt="" />
+            <p id="weather-humidity-text" class="fs-4 text-light m-0"></p>
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <img id="weather-wind-icon" alt="" />
+            <p id="weather-wind-text" class="fs-4 text-light m-0"></p>
+          </div>
         </div>
       </div>
     </div>
@@ -30,5 +50,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./index.js"></script>
   </body>
 </html>
